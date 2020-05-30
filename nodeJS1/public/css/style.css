@@ -1,0 +1,59 @@
+body{
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+}
+
+.contentName{
+  width: 500px;
+  height: 20px;
+  border-bottom: 2px solid #efefef;
+  padding: 5px;
+  margin: 10px auto;
+  text-align: left;
+}
+
+.container{
+  width: 500px;
+  height: 300px;
+  margin: 20px auto;
+  padding: 5px;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+form{
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+form dl dt{
+  width: 250px;
+  padding:5px 0;
+  float:left;
+  clear:both;
+}
+
+form dl dd{
+  padding:10px 0;
+}
+
+button{
+  color: #fff;
+  background-color: rgb(58, 129, 221);
+  border-style:none; 
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(58, 129, 221);
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
