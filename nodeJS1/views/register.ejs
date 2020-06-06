@@ -10,19 +10,41 @@
 <body>
   <div class="container">
     <div class="contentName">Register</div>
-      <form action="#" method=#post>
+      <form name="myform" action="/home" method="post" onsubmit=" return checkTest() ">
         <dl>
           <dt>Name:　</dt>
-          <dd><input type="text"></dd>
+          <dd><input type="text" id="name" name="username"></dd>
           <dt>E-Mail Address:　</dt>
-          <dd><input type="text"></dd>
+          <dd><input type="text" id="email" name="email"></dd>
           <dt>Password:　</dt>
-          <dd><input type="password"></dd>
+          <dd><input type="password" id="password" name="password"></dd>
           <dt>Confirm Password:　</dt>
-          <dd><input type="password"></dd>
+          <dd><input type="password" id="passConfirm" name="passConfirm"></dd>
         </dl>
+        <input type="submit" value="Register" id="btn">
       </form>
-      <button type="button" onclick="location.href='/'">Register</button>
+
+      <script>
+        function checkTest(){
+          var name = document.myform.username
+          var email = document.myform.email
+          var password = document.myform.password
+          var passConfirm = document.myform.passConfirm
+
+          if(name.value === "" || email.value === "" || password.value === "" || passConfirm.value === ""){
+            alert('全ての項目を入力してください');
+            return false;
+          } else if(password.value != passConfirm.value){
+            alert('確認用パスワードが違います');
+            return false;
+          }else if(password.value.length < 7 ){
+            alert('パスワードは７文字以上');
+            return false;
+          }
+        }
+      </script>
+ 
     </div>
+    <script ></script>
 </body>
 </html>
