@@ -48,7 +48,7 @@ button{
   cursor: pointer;
 }
 
-#btn{
+.btn{
   color: #fff;
   background-color: rgb(58, 129, 221);
   border-style:none; 

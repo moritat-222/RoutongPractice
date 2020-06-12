@@ -21,17 +21,17 @@
           <dt>Confirm Password:　</dt>
           <dd><input type="password" id="passConfirm" name="passConfirm"></dd>
         </dl>
-        <input type="submit" value="Register" id="btn">
+        <input type="submit" value="Register" id="btn" class="btn">
       </form>
 
       <script>
         function checkTest(){
-          var name = document.myform.username
-          var email = document.myform.email
-          var password = document.myform.password
-          var passConfirm = document.myform.passConfirm
+          const name = document.myform.username
+          const email = document.myform.email
+          const password = document.myform.password
+          const passConfirm = document.myform.passConfirm
 
-          if(name.value === "" || email.value === "" || password.value === "" || passConfirm.value === ""){
+          if(!name.value || !email.value || !password.value || !passConfirm.value){
             alert('全ての項目を入力してください');
             return false;
           } else if(password.value != passConfirm.value){
@@ -45,6 +45,5 @@
       </script>
  
     </div>
-    <script ></script>
 </body>
 </html>
